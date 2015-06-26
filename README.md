@@ -8,6 +8,7 @@ Our goal is to create an easy to use and accesible place for all quarknet partic
 
 All our code in python and verilog will be posted into the 2015 repository
 
-This year's google docs can be found at the following link: https://docs.google.com/document/d/1Yrgg6_FmysARjadxtsuFznkodTJksrCMOQzoDAOmKkQ/edit?usp=sharing_eid&invite=CJXYzNUG
+This year's google docs can be found at the following link: 
+https://drive.google.com/drive/folders/0B2Xi0uM3sbvufngxcmZGUVZqdGU1VUlmU0wtLUVKZUlQSER1UVR1VmJITFhQLTR1MEpfSlE
 
 Other documents can be found in the documents folder of the program's computer under the directory "Quarknet 2015"
