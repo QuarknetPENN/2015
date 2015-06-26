@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Phys364\Documents\QuarkNet BASYS\Quarknet2015\Root.ncd
+OUTFILE=C:\Users\Phys364\Documents\QuarkNet BASYS\Quarknet2015\Root.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\Phys364\Documents\QuarkNet BASYS\Quarknet2015
+LICENSE=WebPack
+USER_INFO=175939486_208262231_0_974

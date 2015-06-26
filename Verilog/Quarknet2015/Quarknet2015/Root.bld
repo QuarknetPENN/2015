@@ -1,0 +1,40 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s100e-cp132-4
+Root.ngc Root.ngd
+
+Reading NGO file "F:/Quarknet2015/Root.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "constraints.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 20.000;>
+   [constraints.ucf(1)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 177928 kilobytes
+
+Writing NGD file "Root.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "Root.bld"...

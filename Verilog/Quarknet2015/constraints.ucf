@@ -1,0 +1,26 @@
+NET "CLK" LOC = "B8" | PERIOD = 20.000;
+
+NET "SCIN_COINC" LOC = "P11";
+
+#CHIP_IN assignments
+NET "CHIP_IN<1>" LOC = "N3";
+NET "CHIP_IN<0>" LOC = "E2";
+
+#DATAREADY assignment
+#NET "DATAREADY" LOC = "M5";
+
+#CHIP_OUT assignments
+NET "CHIP_OUT<7>" LOC = "G1";
+NET "CHIP_OUT<6>" LOC = "P4";
+NET "CHIP_OUT<5>" LOC = "N4";
+NET "CHIP_OUT<4>" LOC = "N5";
+NET "CHIP_OUT<3>" LOC = "P6";
+NET "CHIP_OUT<2>" LOC = "P7";
+NET "CHIP_OUT<1>" LOC = "M11";
+NET "CHIP_OUT<0>" LOC = "M5";
+
+#TUBE_IN assignments
+NET "TUBE_IN<3>" LOC = "A7";
+NET "TUBE_IN<2>" LOC = "M4";
+NET "TUBE_IN<1>" LOC = "C11";
+NET "TUBE_IN<0>" LOC = "G12";
