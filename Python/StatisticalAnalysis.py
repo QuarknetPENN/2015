@@ -7,26 +7,30 @@ import matplotlib.pyplot as plt
 x = [12.0, 8.0, 4.0, 0.0]
 y = [4.0, 2.0, 4.0, 2.0]
 r = [1.2, 1, 0.8, 0.9]
-xbar = mean(x)
+ybar = mean(y)
 
-d = []
-xd = []
+y_adj = []
+xy = []
 xx = []
 n = len(x)
 computationTime = 0
+
 t0 = time.clock()
 
 for i in range(0,n):
-    d.append(y[i] - r[i])
+    if (y[i] < ybar):
+        y_adj.append(y[i] + r[i])
+    else:
+        y_adj.append(y[i] - r[i])
 for i in range(0,n):
-    xd.append(x[i]*d[i])
+    xy.append(x[i]*y_adj[i])
 for i in range(0,n):
     xx.append(x[i]**2)
     
     
     
-a = ((mean(d)*(sum(xx)) - mean(x)*sum(xd))) / (sum(xx)-n*(mean(x)**2))
-b = (sum(xd) - n*mean(x)*mean(d))/(sum(xx)-n*(mean(x)**2))
+a = ((mean(y)*(sum(xx)) - mean(x)*sum(xy))) / (sum(xx)-n*(mean(x)**2))
+b = (sum(xy) - n*mean(x)*mean(y))/(sum(xx)-n*(mean(x)**2))
 
 t1 = time.clock()
 
@@ -35,9 +39,9 @@ computationTime = t1 - t0
 print 'x: ' + str(x)
 print 'y: ' + str(y)
 print 'r: ' + str(r)
-print 'd: ' + str(d)
+print 'y_adj: ' + str(y_adj)
 print 'xx: ' + str(xx)
-print 'xd: ' + str(xd)
+print 'xy: ' + str(xy)
 print 'n: ' + str(n)
     
 print "a: " + str(a)
