@@ -4,7 +4,7 @@ start = time.clock()
 import RPi.GPIO as GPIO
 from math import sqrt, sin, cos, pi
 from scipy import stats
-import numpy as np
+import numpy as np  
 import matplotlib.pyplot as plt
 print 'Importation takes', time.clock() - start, 'seconds'
 start = time.clock()
