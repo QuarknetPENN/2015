@@ -6,12 +6,20 @@ import matplotlib.pyplot as plt
 
 def analysis(xin,yin,rin,plot):
     '''
+    inputs:
+    xin -- the x positions of the centers of all the hit tubes (list)
+    yin -- the y positions of the centers of all the hit tubes (list)
+    rin -- the hit radius of all the the hit tubes (list)
+    plot -- whether a display of data is desired (boolean)
+    
+    outputs:
+    a -- intercept
+    b -- slope
+    Computation time -- seconds
+    Correlation -- float
     '''
     t0 = time.clock() #ends timer 
     #Regression Test Arrays
-    x = list(xin)
-    y = list(yin)
-    r = list(rin)
     list1 = []
     list2 = []
     n = len(x)
@@ -65,8 +73,6 @@ def analysis(xin,yin,rin,plot):
     print "Linear Regression Results"
     print ""
     print "ComputationTime:   " + str(computationTime)
-    print "a0:                " + str(a0)
-    print "b0:                " + str(b0)
     print "a:                 " + str(a)
     print "b:                 " + str(b)
     print "Correlation:       " + str(correlation)
